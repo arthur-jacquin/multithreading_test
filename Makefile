@@ -15,7 +15,6 @@ clean:
 .PHONY: clean
 
 dist: ${SRC} ${LIB} ${HEADERS} Makefile multithreading_test.html
-	ls $^
 	mkdir -p multithreading_test
 	cp $^ multithreading_test
 	tar -cf multithreading_test.tar multithreading_test
